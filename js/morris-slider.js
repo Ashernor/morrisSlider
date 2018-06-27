@@ -57,14 +57,18 @@ MorrisSlider.prototype = {
         // Let's iterate in the list of movies to create the content of the slider
         var i = 0;
         data.forEach(function(movie){
+            console.log(movie);
             if (i == 0) var htmlCass = "beginning active";
 
+            var stars = "";
+            // Sometime the vote_average is empty so let's not show it when it's just empty
+            if (movie.vote_average > 0) stars = morrisSlider.transfromIntoStars(movie.vote_average);
             // the following variable contain the HTML for each movie it contains the following element
             // 1. A container with the class movie
             // 2. And image with the poster of the movie
             // 3. A container movie infos which is composed of title in H2 tag, a release date H4 tag, and the movie overview in a P tag
             // 4. At last but not least a score rating from users
-            var html = `<div class="movie ${htmlCass}" data-position="${i}"><img alt='${movie.title} poster' src='http://image.tmdb.org/t/p/w500/${movie.poster_path}' /><div class="movieInfos"><h2>${movie.title}</h2><h4>${movie.release_date}</h4><p>${morrisSlider.truncateWords(movie.overview, 85)}</p>${morrisSlider.transfromIntoStars(movie.vote_average)}</div></div>`;
+            var html = `<div class="movie ${htmlCass}" data-position="${i}"><img alt='${movie.title} poster' src='http://image.tmdb.org/t/p/w500/${movie.poster_path}' /><div class="movieInfos"><h2>${movie.title}</h2><h4>${movie.release_date}</h4><p>${morrisSlider.truncateWords(movie.overview, 85)}</p>${stars}</div></div>`;
             // Let's add the HTML to our container
             $("#movieSlider").append(html);
 
