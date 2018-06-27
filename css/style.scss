@@ -4,7 +4,7 @@
   margin: 20px auto;
   background: #efefef;
   position: relative;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
   font-family: Arial, sans-serif;
@@ -59,9 +59,9 @@
 
       & > p {
         width: 900px;
-        height: auto; /* height cannot be defined */
-        word-break: break-all; /*  */
-        word-wrap: break-word; /* if you want to cut the complete word */
+        height: auto;
+        word-break: break-all;
+        word-wrap: break-word;
         white-space: normal;
         font-size: 0.8em;
         margin: 5px 0 0 10px;
@@ -82,9 +82,7 @@
 
     &.active .movieInfos {
       opacity: 1;
-
     }
-
   }
 
   .stars-outer {
@@ -113,9 +111,7 @@
         content: "\f005 \f005 \f005 \f005 \f005";
         color: #f8ce0b;
       }
-
     }
-
   }
 
   .bullets-nav {
