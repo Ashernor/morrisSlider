@@ -4,7 +4,7 @@
   margin: 20px auto;
   background: #efefef;
   position: relative;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
   font-family: Arial, sans-serif; }
@@ -53,11 +53,8 @@
       #movieSlider .movie .movieInfos > p {
         width: 900px;
         height: auto;
-        /* height cannot be defined */
         word-break: break-all;
-        /*  */
         word-wrap: break-word;
-        /* if you want to cut the complete word */
         white-space: normal;
         font-size: 0.8em;
         margin: 5px 0 0 10px; }
@@ -76,8 +73,7 @@
       opacity: 1; }
   #movieSlider .stars-outer {
     display: inline-block;
-    position: relative;
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     position: absolute;
     right: 70px;
     top: 20px;
@@ -104,13 +100,13 @@
     #movieSlider .bullets-nav a {
       width: 20px;
       height: 20px;
-      background: #fff;
+      background: #888;
       display: inline-block;
       margin: 10px;
       border-radius: 30px; }
       #movieSlider .bullets-nav a:hover {
-        background: #888; }
+        background: #fff; }
       #movieSlider .bullets-nav a.active {
-        background: #888; }
+        background: #fff; }
 
 /*# sourceMappingURL=style.css.map */
