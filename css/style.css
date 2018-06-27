@@ -1,0 +1,116 @@
+#movieSlider {
+  width: 950px;
+  height: 700px;
+  margin: 20px auto;
+  background: #efefef;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  font-family: Arial, sans-serif; }
+  #movieSlider .mask {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 700px;
+    width: 239px;
+    background: #f3f3f3;
+    opacity: 0.7; }
+    #movieSlider .mask.maskRight {
+      left: auto;
+      right: -24px; }
+  #movieSlider .buttons {
+    position: absolute;
+    top: 60%;
+    background: #000;
+    width: 40px;
+    height: 20px;
+    z-index: 12;
+    background: url("arrow.svg") no-repeat; }
+    #movieSlider .buttons.next {
+      left: 95%;
+      transform: rotate(180deg); }
+    #movieSlider .buttons.prev {
+      display: none; }
+  #movieSlider .movie {
+    display: inline-block;
+    width: 500px;
+    height: 700px; }
+    #movieSlider .movie .movieInfos {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      z-index: 9;
+      transition: opacity 600ms ease-in;
+      width: 950px;
+      height: 230px;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 10px;
+      color: #fff;
+      font-size: 1.3em; }
+      #movieSlider .movie .movieInfos > p {
+        width: 900px;
+        height: auto;
+        /* height cannot be defined */
+        word-break: break-all;
+        /*  */
+        word-wrap: break-word;
+        /* if you want to cut the complete word */
+        white-space: normal;
+        font-size: 0.8em;
+        margin: 5px 0 0 10px; }
+      #movieSlider .movie .movieInfos h2 {
+        text-transform: uppercase;
+        margin: 10px 0 0 10px; }
+      #movieSlider .movie .movieInfos h4 {
+        font-style: italic;
+        margin: 5px 0 0 10px; }
+    #movieSlider .movie img {
+      top: 0;
+      position: absolute; }
+    #movieSlider .movie.beginning {
+      margin-left: 25%; }
+    #movieSlider .movie.active .movieInfos {
+      opacity: 1; }
+  #movieSlider .stars-outer {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+    position: absolute;
+    right: 70px;
+    top: 20px;
+    font-size: 1.7em;
+    letter-spacing: 8px; }
+    #movieSlider .stars-outer::before {
+      content: "\f006 \f006 \f006 \f006 \f006"; }
+    #movieSlider .stars-outer .stars-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0; }
+      #movieSlider .stars-outer .stars-inner::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        color: #f8ce0b; }
+  #movieSlider .bullets-nav {
+    z-index: 10;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center; }
+    #movieSlider .bullets-nav a {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      display: inline-block;
+      margin: 10px;
+      border-radius: 30px; }
+      #movieSlider .bullets-nav a:hover {
+        background: #888; }
+      #movieSlider .bullets-nav a.active {
+        background: #888; }
+
+/*# sourceMappingURL=style.css.map */

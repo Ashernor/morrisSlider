@@ -1,0 +1,16 @@
+
+<svg width="33px" height="17px" viewBox="0 0 33 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-72.000000, -583.000000)">
+            <g id="Arrow-29" transform="translate(88.500000, 591.500000) scale(-1, 1) translate(-88.500000, -591.500000) translate(72.000000, 571.000000)">
+                <g>
+                    <path d="M0,20.5 C0,20.5 1.79044819,20.5 3.99936922,20.5 L21,20.5" id="Stroke-29" stroke="#455A64" stroke-width="6"></path>
+                    <path d="M32.2835353,21.5798995 C33.2159928,20.9835886 33.2191798,20.0188156 32.2835353,19.4204666 L22.3693163,13.0802775 C20.5084943,11.8902732 19,12.7098983 19,14.9165743 L19,26.0837918 C19,28.2879548 20.5041128,29.1128949 22.3693163,27.9200885 L32.2835353,21.5798995 Z" id="Arrow-head-29" fill="#455A64"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

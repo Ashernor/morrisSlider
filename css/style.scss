@@ -1,0 +1,146 @@
+#movieSlider {
+  width: 950px;
+  height: 700px;
+  margin: 20px auto;
+  background: #efefef;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  font-family: Arial, sans-serif;
+
+  .mask {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 700px;
+    width: 239px;
+    background: #f3f3f3;
+    opacity: 0.7;
+
+    &.maskRight {
+      left: auto;
+      right: -24px;
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    top: 60%;
+    background: #000;
+    width: 40px;
+    height: 20px;
+    z-index: 12;
+    background: url('arrow.svg') no-repeat;
+    &.next {left: 95%; transform: rotate(180deg);}
+    &.prev {display: none;}
+  }
+
+  .movie {
+    display: inline-block;
+    width: 500px;
+
+    height: 700px;
+
+    .movieInfos {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      z-index: 9;
+      transition: opacity 600ms ease-in;
+      width: 950px;
+      height: 230px;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 10px;
+      color: #fff;
+      font-size: 1.3em;
+
+      & > p {
+        width: 900px;
+        height: auto; /* height cannot be defined */
+        word-break: break-all; /*  */
+        word-wrap: break-word; /* if you want to cut the complete word */
+        white-space: normal;
+        font-size: 0.8em;
+        margin: 5px 0 0 10px;
+      }
+
+      h2 {text-transform: uppercase; margin: 10px 0 0 10px;}
+      h4 {font-style: italic; margin: 5px 0 0 10px;}
+    }
+
+    img {
+      top: 0;
+      position: absolute;
+    }
+
+    &.beginning {
+      margin-left: 25%;
+    }
+
+    &.active .movieInfos {
+      opacity: 1;
+
+    }
+
+  }
+
+  .stars-outer {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+    position: absolute;
+    right: 70px;
+    top: 20px;
+    font-size: 1.7em;
+    letter-spacing: 8px;
+
+    &::before {
+      content: "\f006 \f006 \f006 \f006 \f006";
+    }
+
+    .stars-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+
+      &::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        color: #f8ce0b;
+      }
+
+    }
+
+  }
+
+  .bullets-nav {
+    z-index: 10;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+
+    a {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      display: inline-block;
+      margin: 10px;
+      border-radius: 30px;
+
+      &:hover {
+        background: #888;
+      }
+
+      &.active {
+        background: #888;
+      }
+    }
+  }
+}
+
