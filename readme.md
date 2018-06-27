@@ -7,6 +7,8 @@ It uses MovieDB API (ttps://developers.themoviedb.org/3/movies/get-upcoming)
 
 It's name is 'hommag' co Morris Columns in Paris which are cylindrical outdoor sidewalk structures with a characteristic style that are used for advertising of upcoming movies. (https://fr.wikipedia.org/wiki/Colonne_Morris)
 
+You can try the slider at this address : http://www.thomasrobin.net/morris-slider/
+
 ## How it works 
 
 1. Add the CSS and JS to your page or project (and 

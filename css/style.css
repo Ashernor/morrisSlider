@@ -19,8 +19,7 @@
     opacity: 0.7; }
     #movieSlider .mask.maskRight {
       left: auto;
-      right: -28px;
-      }
+      right: -28px; }
   #movieSlider .buttons {
     position: absolute;
     top: 60%;
@@ -101,13 +100,13 @@
     #movieSlider .bullets-nav a {
       width: 20px;
       height: 20px;
-      background: #888;
+      background: #fff;
       display: inline-block;
       margin: 10px;
       border-radius: 30px; }
       #movieSlider .bullets-nav a:hover {
-        background: #fff; }
+        background: #888; }
       #movieSlider .bullets-nav a.active {
-        background: #fff; }
+        background: #888; }
 
 /*# sourceMappingURL=style.css.map */
