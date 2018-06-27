@@ -90,7 +90,7 @@ MorrisSlider.prototype = {
         if (position == $(".movie").length-1) $(".buttons.next").hide();
 
         // This time we need to do some calculs before animate the whole slider
-        var whereToSlide = `${ 25 - position*52.5 }%`;
+        var whereToSlide = `${ 25 - position*52.60 }%`;
         $(".movie.beginning").animate({
             marginLeft: whereToSlide,
         }, 1000, function() {
@@ -124,7 +124,7 @@ MorrisSlider.prototype = {
         // The movieInfo container show and hides thanks to the magic of css transition
         $(".active").removeClass("active");
         $(".movie.beginning").animate({
-            marginLeft: `${direction}=52.5%`,
+            marginLeft: `${direction}=52.60%`,
         }, 1000, function() {
             $(next).addClass("active");
         });

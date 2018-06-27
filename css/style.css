@@ -19,7 +19,8 @@
     opacity: 0.7; }
     #movieSlider .mask.maskRight {
       left: auto;
-      right: -24px; }
+      right: -28px;
+      }
   #movieSlider .buttons {
     position: absolute;
     top: 60%;
