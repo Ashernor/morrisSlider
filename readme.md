@@ -32,5 +32,6 @@ You can browse the code in the morris-slider.js it's documented
 - APIKey as an argument 
 - Region & language in methods or other arguments if it's well documented
 - Better look, why not transform it in circular column, like the ones ine Paris ;)
+- Better date display (according to user region or language) maybe with moment.js - https://momentjs.com/
 
 
